@@ -1,0 +1,23 @@
+name: practica_08_geolocalizacion_ej
+description: App de puntos de interés con geolocalización
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  geolocator: ^12.0.0
+  url_launcher: ^6.2.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.4
+  plugin_platform_interface: ^2.1.8
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
