@@ -1,10 +1,10 @@
-# 📍 Práctica 08: App de Puntos de Interés (POI)
+# Práctica 08: App de Puntos de Interés (POI)
 
 Aplicación Flutter desarrollada como ejercicio evaluable para la materia de Prácticas Móviles. La app obtiene la ubicación actual del dispositivo, permite guardar hasta tres puntos de interés (POI) con nombre y coordenadas, calcula la distancia entre el usuario y cada punto, y ofrece acceso a un mapa externo.
 
 ---
 
-## 🚀 Características
+## Características
 
 - **Ubicación en tiempo real**: Obtiene latitud, longitud y precisión usando el GPS del dispositivo.
 - **Gestión de Puntos de Interés**:
@@ -16,7 +16,7 @@ Aplicación Flutter desarrollada como ejercicio evaluable para la materia de Pr�
 
 ---
 
-## 🛠️ Requisitos y Dependencias
+## Requisitos y Dependencias
 
 Agrega las siguientes dependencias en tu `pubspec.yaml`:
 
