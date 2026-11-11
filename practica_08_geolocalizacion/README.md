@@ -52,7 +52,7 @@ flutter pub get
 
 ---
 
-## ⚙️ Configuración por plataforma
+## Configuración por plataforma
 
 ### Android
 
