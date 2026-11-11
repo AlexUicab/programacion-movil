@@ -1,10 +1,10 @@
-# 📍 Práctica 08 — Geolocalización en Flutter
+# Práctica 08 — Geolocalización en Flutter
 
 Aplicación Flutter que obtiene la ubicación actual del dispositivo usando el paquete `geolocator` y permite abrir las coordenadas en Google Maps mediante `url_launcher`.
 
 ---
 
-## 📋 Descripción
+## Descripción
 
 La app muestra una pantalla (`UbicacionPage`) con:
 
@@ -18,7 +18,7 @@ También maneja los casos de error más comunes:
 
 ---
 
-## 🛠️ Requisitos
+## Requisitos
 
 - Flutter SDK `>=3.x`
 - Dart `>=3.x`
@@ -26,7 +26,7 @@ También maneja los casos de error más comunes:
 
 ---
 
-## 📦 Dependencias
+## Dependencias
 
 Agrega en tu `pubspec.yaml`:
 
@@ -89,7 +89,7 @@ Y en `ios/Runner/Info.plist` para `url_launcher`, agrega los esquemas permitidos
 
 ---
 
-## ▶️ Ejecución
+## Ejecución
 
 ```bash
 flutter run
@@ -102,7 +102,7 @@ flutter run
 
 ---
 
-## 🧪 Tests
+## Tests
 
 El proyecto incluye tests de widget que mockean `GeolocatorPlatform` para verificar:
 
@@ -131,11 +131,11 @@ class MockGeolocator extends Mock
     implements GeolocatorPlatform {}
 ```
 
-> ⚠️ Importante: usar `MockPlatformInterfaceMixin` es obligatorio, ya que `GeolocatorPlatform` extiende `PlatformInterface` y prohíbe implementaciones directas con `implements`.
+> Importante: usar `MockPlatformInterfaceMixin` es obligatorio, ya que `GeolocatorPlatform` extiende `PlatformInterface` y prohíbe implementaciones directas con `implements`.
 
 ---
 
-## 🧩 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 practica_08_geolocalizacion/
@@ -149,7 +149,7 @@ practica_08_geolocalizacion/
 
 ---
 
-## 🧠 Lógica principal
+## Lógica principal
 
 ```dart
 Future<void> obtener() async {
@@ -166,7 +166,7 @@ Future<void> abrirMapa() async {
 
 ---
 
-## 🐞 Problemas comunes
+## Problemas comunes
 
 | Problema | Solución |
 |---|---|
@@ -174,20 +174,3 @@ Future<void> abrirMapa() async {
 | `The imported package 'plugin_platform_interface' isn't a dependency` | Agregar `plugin_platform_interface` a `dev_dependencies`. |
 | No se obtiene la ubicación en emulador | Configurar una ubicación simulada en el emulador (Extended Controls → Location). |
 | `launchUrl` no abre el mapa | Verificar `LSApplicationQueriesSchemes` en iOS y permisos de Internet en Android. |
-
----
-
-## 📚 Referencias
-
-- [geolocator](https://pub.dev/packages/geolocator)
-- [url_launcher](https://pub.dev/packages/url_launcher)
-- [mocktail](https://pub.dev/packages/mocktail)
-- [plugin_platform_interface](https://pub.dev/packages/plugin_platform_interface)
-
----
-
-## 👤 Autor
-
-- **Nombre:** _(tu nombre)_
-- **Materia:** Prácticas Móvil
-- **Práctica:** 08 — Geolocalización
